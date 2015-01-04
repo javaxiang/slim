@@ -38,6 +38,10 @@ if RUBY_VERSION >= '2.2.0'
   gem 'test-unit', platforms: :mri
 end
 
+if RUBY_ENGINE == 'rbx'
+  gem 'psych'
+end
+
 if ENV['SINATRA']
   gem 'rack-test'
   if ENV['SINATRA'] == 'master'

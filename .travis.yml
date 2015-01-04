@@ -43,3 +43,5 @@ matrix:
     - env: "TASK=test:rails RAILS=master"
     - rvm: ruby-head
     - rvm: jruby-19mode
+    - rvm: rbx-2
+      env: "TASK=test:rails RAILS=4.1.8"
